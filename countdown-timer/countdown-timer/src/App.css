@@ -1,0 +1,101 @@
+.app {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 32px;
+}
+
+.app h1 {
+  font-size: 128px;
+  margin: 0 0 0 84px;
+}
+
+.app input {
+  margin: 0 12px;
+  padding: 8px;
+  width: 70px;
+  font-size: 14px;
+  border-radius: 0px;
+}
+
+.app .start-btn {
+  border: none;
+  border-radius: 0;
+  background: rgb(83 182 160);
+  color: white;
+  font-size: 17px;
+  padding: 8px;
+}
+
+.app .pause-btn {
+  width: 48px;
+  margin-left: 24px;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-flex-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.box {
+  padding: 12px;
+  border: solid black 2px;
+  height: 18px;
+  width: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box:hover {
+  cursor: pointer;
+}
+
+.active {
+  background: rgb(107 107 107);
+  color: white;
+}
+
+.play-pause {
+  max-width: 48px;
+  margin-left: 12px;
+}
+
+.play-pause:hover {
+  cursor: pointer;
+}
+
+.display-message {
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 18px;
+  margin-top: 32px;
+}
+
+.red {
+  color: red;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0.0;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    opacity: 0.0;
+  }
+}
+.blink {
+  animation: blink 1s step-start 0s infinite;
+  -webkit-animation: blink 1s step-start 0s infinite;
+}
